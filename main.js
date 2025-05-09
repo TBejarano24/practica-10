@@ -48,19 +48,22 @@ async function insertCard(usersData) {
     /*Acceder a la lista de clases de cardContainer y modificarlo para que me permita mostrar un sólo elemento centrado*/
     let div = document.createElement("div");
     div.classList.add(
-      "m-3",
+      "absolute",
+      "mx-auto",
       "mt-8",
       "flex",
       "flex-col",
       "gap-1",
       "p-3",
       "shadow-[5px_7px_#00000058]",
-      "bg-white",
+      "bg-[#f32e2e]",
+      "text-white",
       "rounded-xl",
-      "min-w-[290px]",
+      "max-w-[290px]",
       "justify-self-center"
     );
-    div.textContent = "ERROR";
+    div.textContent =
+      "ERROR: An error ocurred while trying to retrieve the data, please try again later";
     cardContainer.appendChild(div);
   }
 }
