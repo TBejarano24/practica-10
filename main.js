@@ -45,7 +45,6 @@ async function insertCard(usersData) {
       cardContainer.appendChild(div);
     });
   } else {
-    /*Acceder a la lista de clases de cardContainer y modificarlo para que me permita mostrar un sólo elemento centrado*/
     let div = document.createElement("div");
     div.classList.add(
       "absolute",
